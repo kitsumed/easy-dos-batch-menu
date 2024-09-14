@@ -1,0 +1,2 @@
+		A menu to change the Windows theme. Configurations are
+		done by editing the same registry values as the Settings app.

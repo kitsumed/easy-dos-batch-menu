@@ -1,0 +1,3 @@
+		A menu with multiples options to delay, disable, or 
+		re-enable Windows Update. Most configurations are done
+		using GPO policies on the local machine.
