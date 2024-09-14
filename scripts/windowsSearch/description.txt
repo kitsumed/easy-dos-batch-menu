@@ -1,0 +1,3 @@
+		A menu with multiples options to disable web search,
+		Cortana, or other privacy & security related options. 
+		Most configurations are done in the registry.

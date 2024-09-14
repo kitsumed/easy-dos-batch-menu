@@ -6,6 +6,7 @@ You can download the current code of the `main` branch by clicking [here](https:
 Note that some scripts may require E-DOS to be run as a Administrator.
 ## Scripts
 * `[theme]` Change Windows theme.
+* `[windowsSearch]` Manage the Windows Search bar, web privacy features and Cortana.
 * `[windowsUpdate]` Delay, disable or re-enable Windows Update.
 ## Contributing
 You're welcome to propose new scripts or modifications, as long as they include comments that explain what's going on.
