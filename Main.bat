@@ -29,9 +29,12 @@ echo ===============Home===============
 echo OS : %winVerName% (%winVerNum%)
 echo ==================================
 echo [0] Exit
+echo.
 echo [1] List Scripts
 echo [2] Open God Mode
-echo [3] Open Github Repo
+echo [3] Open Windows Tools Menu
+echo.
+echo [4] Open Github Repo
 echo.
 rem Ask user for a choice
 set /P userChoice=Choice : 
@@ -39,7 +42,8 @@ set /P userChoice=Choice :
 if "%userChoice%"=="0" exit
 if "%userChoice%"=="1" GOTO scriptsList
 if "%userChoice%"=="2" explorer.exe shell:::{ED7BA470-8E54-465E-825C-99712043E01C} & goto Home
-if "%userChoice%"=="3" start https://github.com/kitsumed/easy-dos-batch-menu & goto Home
+if "%userChoice%"=="3" explorer.exe shell:::{D20EA4E1-3957-11D2-A40B-0C5020524153} & goto Home
+if "%userChoice%"=="4" start https://github.com/kitsumed/easy-dos-batch-menu & goto Home
 goto invalidInput
 
 rem [SCRIPTS LIST MENU]
