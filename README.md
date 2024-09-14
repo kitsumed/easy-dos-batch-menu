@@ -9,4 +9,4 @@ Note that some scripts may require E-DOS to be run as a Administrator.
 * `[windowsUpdate]` Delay, disable or re-enable Windows Update.
 ## Contributing
 You're welcome to propose new scripts or modifications, as long as they include comments that explain what's going on.
-For creating a new script, please use the [template script](https://github.com/kitsumed/easy-dos-batch-menu/tree/main/scripts/template) as a guide.
+To create a new script, please use the [template script](https://github.com/kitsumed/easy-dos-batch-menu/tree/main/scripts/template) as a guide.
