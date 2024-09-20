@@ -4,6 +4,9 @@ This program has a `Main.bat` menu which executes other scripts (batch files) un
 ## Download
 You can download the current code of the `main` branch by clicking [here](https://github.com/kitsumed/easy-dos-batch-menu/archive/refs/heads/main.zip). After downloading and unzipping the file, run the `Main.bat` file.
 Note that some scripts may require E-DOS to be run as a Administrator.
+## Supported OS
+* Windows 11
+* Windows 10
 ## Scripts
 * `[theme]` Change Windows theme.
 * `[windowsSearch]` Manage the Windows Search bar, web privacy features and Cortana.
