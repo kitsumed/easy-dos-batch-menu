@@ -15,8 +15,9 @@ echo.
 echo [1] %scriptMode% windows automatic update
 echo [2] %scriptMode% including drivers with Windows quality updates (Win10+)
 echo [3] %scriptMode% delaying feature updates (not security) for 60 days (Win10+)
+echo [4] %scriptMode% preventing AUTOMATICALLY installing applications associated with device metadata (like the spyware LG Monitor application, it block installing bloatware)
 echo.
-choice /C QC123 /M "Please select a feature."
+choice /C QC1234 /M "Please select a feature."
 
 rem Quit script execution
 If %ERRORLEVEL% EQU 1 exit
@@ -67,6 +68,16 @@ If %ERRORLEVEL% EQU 5 (
 		reg delete HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate /v DeferFeatureUpdatesPeriodInDays /f
 	)
 	echo [*] Updated the include setting for drivers in quality updates.
+)
+
+rem Prevent automatic installation of device metadata apps (bloatware)
+If %ERRORLEVEL% EQU 6 (
+    if "%scriptMode%"=="Enable" (
+        reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Device Metadata" /v PreventDeviceMetadataFromNetwork /d 1 /t REG_DWORD /f
+    ) else (
+        reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Device Metadata" /v PreventDeviceMetadataFromNetwork /d 0 /t REG_DWORD /f
+    )
+    echo [*] Updated setting preventing automatic installation of applications associated with device metadata.
 )
 
 pause
